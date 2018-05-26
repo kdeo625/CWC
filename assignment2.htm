@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<title>
+	CWC Assignment 2
+</title>
+<head>
+	<meta name="viewport" content ="width=device-width,initial-scale=1.0">
+<style>
+
+input[type=string], select {
+    width:100% ;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+input[type=email], select {
+    width:100% ;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+input[type=number], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+input[type=password], select {
+    width:100% ;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    background: linear-gradient(to bottom right,white,silver);
+    color: black;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+}
+
+html { 
+	background:linear-gradient(to bottom right,silver,white);
+	background-size:cover;
+}
+
+div {
+	width: 30%;
+	margin: auto;
+	border-radius: 20px;
+	background: grey;
+	padding: 40px;
+} 
+</style>
+</head>
+<body>
+<div>
+      <form action="/action_page.php">
+	<h1> Registration Form </h1>
+	<label for="name"><h3>Enter your name</label><br>
+	<input id="name" type="string" name="name" placeholder="Name" pattern="[A-Za-z]+" maxlength="20" title=" Maximum 20 characters with only english alphabets and space"><br>
+
+	<label for="address">Enter your Address</label><br>
+	<input id="address" type ="string" name="address" placeholder="Address" pattern ="[A-Za-z]+" maxlength="100" title="Maximum 100 characters"><br>
+	
+	<label for="email">Enter your e-mail</label><br>
+	<input id="email" type="email" id="myemail" name="email" pattern="[a-z]+@[a-z]+\.com$" placeholder="Email" title="email should be of the form “someone@xyz.com” where left side may contain english alphabets only and rightside must end with a “.com” domain name"><br>
+	
+	<label for="mobile">Enter your Mobile number</label><br>
+	<input id="mobile" type="number" name="mobile" pattern="[0-9]" placeholder="Mobile number" length="10" title=" 10 digit numeric value"><br>
+
+	<label id="account">Enter your Account number</label></br>
+	<input id="account" type="number" name ="account" pattern="[0-9]" placeholder="Account number" length="5" title="5 digit numeric value"><br>
+
+	
+	<label for="password">Enter your password</label></br>
+	<input id="password" type="password" name ="password" pattern="[A-Za-z0-9]+" placeholder="password" maxlength="20" title="maximum 20 alphanumeric character"><br>
+	
+	<input type="submit" value="submit"><br>
+      </form>
+</div>
+</body>
+</html>
